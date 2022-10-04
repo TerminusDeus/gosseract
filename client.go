@@ -2,7 +2,7 @@ package gosseract
 
 // #if __FreeBSD__ < 10
 // #cgo CXXFLAGS: -std=c++0x
-// #cgo CPPFLAGS: -Wno-unused-result
+// #cgo tesseract: gosseract
 // #endif
 // #include <stdlib.h>
 // #include <stdbool.h>
