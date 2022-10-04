@@ -2,7 +2,9 @@ package gosseract
 
 // #if __FreeBSD__ < 10
 // #cgo CXXFLAGS: -std=c++0x
-// #cgo tesseract: gosseract
+// #cgo LDFLAGS: -L /usr/include -lleptonica
+// #cgo LDFLAGS: -L /usr/include -ltesseract
+// #cgo CPPFLAGS: -Wno-unused-result
 // #endif
 // #include <stdlib.h>
 // #include <stdbool.h>
